@@ -1,0 +1,11 @@
+/* Dedicated Shorts shelves */
+ytd-reel-shelf-renderer,
+ytd-rich-shelf-renderer[is-shorts],
+ytm-shorts-lockup-view-model {
+  display: none !important;
+}
+
+/* Elements identified by the script */
+.shorts-blocker-hidden {
+  display: none !important;
+}
