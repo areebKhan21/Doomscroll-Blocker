@@ -12,6 +12,15 @@
       "css": ["styles.css"],
       "js": ["content.js"],
       "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://www.instagram.com/*",
+        "https://instagram.com/*"
+      ],
+      "css": ["instagram.css"],
+      "js": ["instagram.js"],
+      "run_at": "document_start"
     }
   ]
 }
