@@ -1,0 +1,20 @@
+/* Hide common entry links immediately, including the no-trailing-slash case.
+   JavaScript handles full URL parsing, profile tabs, cards, and reused nodes. */
+a[href="/reels"],
+a[href="/reels/"],
+a[href^="/reel/"],
+a[href^="/reels/"],
+a[href="https://www.instagram.com/reels"],
+a[href="https://instagram.com/reels"],
+a[href^="https://www.instagram.com/reel/"],
+a[href^="https://www.instagram.com/reels/"],
+a[href^="https://instagram.com/reel/"],
+a[href^="https://instagram.com/reels/"],
+[data-reels-blocker-hidden] {
+  display: none !important;
+}
+
+/* Avoid showing the Reels player while the home-page redirect completes. */
+html[data-reels-blocker-redirecting] {
+  visibility: hidden !important;
+}
